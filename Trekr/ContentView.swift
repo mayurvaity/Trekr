@@ -8,17 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    let location: Location
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            ScrollView {
+                Image(location.heroPicture)
+                    .resizable()
+                    .scaledToFit()
+                
+                Text(location.name)
+                    .font(.largeTitle)
+                    .bold()
+                    .multilineTextAlignment(.center)
+                
+                Text(location.country)
+                    .font(.title)
+                    .foregroundStyle(.secondary)
+                
+                Text(location.description)
+                    .padding(.horizontal)
+                
+                Text("Did you know?")
+                    .font(.title3)
+                    .bold()
+                    .padding(.top)
+                
+                Text(location.more)
+                    .padding(.horizontal)
+            }
+            .navigationTitle("Discover")
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(location: Location.example)
 }

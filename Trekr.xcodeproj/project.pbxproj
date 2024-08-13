@@ -15,6 +15,7 @@
 		0D179F482C692C5F00E0CDFC /* tips.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D179F462C692C5F00E0CDFC /* tips.json */; };
 		0D74E9A12C6A7DC1008D1570 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D74E9A02C6A7DC1008D1570 /* Location.swift */; };
 		0D74E9A32C6A8273008D1570 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D74E9A22C6A8273008D1570 /* Locations.swift */; };
+		0D8347432C6BD7760001ACD4 /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8347422C6BD7760001ACD4 /* WorldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		0D179F462C692C5F00E0CDFC /* tips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tips.json; sourceTree = "<group>"; };
 		0D74E9A02C6A7DC1008D1570 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		0D74E9A22C6A8273008D1570 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		0D8347422C6BD7760001ACD4 /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				0D179F372C69292200E0CDFC /* TrekrApp.swift */,
 				0D179F392C69292200E0CDFC /* ContentView.swift */,
+				0D8347422C6BD7760001ACD4 /* WorldView.swift */,
 				0D74E9A22C6A8273008D1570 /* Locations.swift */,
 				0D74E9A02C6A7DC1008D1570 /* Location.swift */,
 				0D179F3B2C69292400E0CDFC /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 			files = (
 				0D179F3A2C69292200E0CDFC /* ContentView.swift in Sources */,
 				0D74E9A12C6A7DC1008D1570 /* Location.swift in Sources */,
+				0D8347432C6BD7760001ACD4 /* WorldView.swift in Sources */,
 				0D74E9A32C6A8273008D1570 /* Locations.swift in Sources */,
 				0D179F382C69292200E0CDFC /* TrekrApp.swift in Sources */,
 			);

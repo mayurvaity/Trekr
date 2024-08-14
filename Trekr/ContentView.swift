@@ -25,6 +25,11 @@ struct ContentView: View {
                     Text("Locations")
                 }
             
+            TipsView()
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("Tips")
+                }
         }
         //adding environmentObject so that locations obj can be used anywhere within the tabview
         .environmentObject(locations)

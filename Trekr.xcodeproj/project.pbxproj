@@ -16,6 +16,8 @@
 		0D74E9A12C6A7DC1008D1570 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D74E9A02C6A7DC1008D1570 /* Location.swift */; };
 		0D74E9A32C6A8273008D1570 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D74E9A22C6A8273008D1570 /* Locations.swift */; };
 		0D8347432C6BD7760001ACD4 /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8347422C6BD7760001ACD4 /* WorldView.swift */; };
+		0D9412B22C6D39AC00D72F5D /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9412B12C6D39AC00D72F5D /* Tip.swift */; };
+		0D9412B42C6D3B1000D72F5D /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9412B32C6D3B1000D72F5D /* TipsView.swift */; };
 		0DE32C992C6D2F4B000DA4AB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE32C982C6D2F4B000DA4AB /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		0D74E9A02C6A7DC1008D1570 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		0D74E9A22C6A8273008D1570 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 		0D8347422C6BD7760001ACD4 /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
+		0D9412B12C6D39AC00D72F5D /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		0D9412B32C6D3B1000D72F5D /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
 		0DE32C982C6D2F4B000DA4AB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				0D179F372C69292200E0CDFC /* TrekrApp.swift */,
+				0D9412B12C6D39AC00D72F5D /* Tip.swift */,
+				0D9412B32C6D3B1000D72F5D /* TipsView.swift */,
 				0D179F392C69292200E0CDFC /* ContentView.swift */,
 				0DE32C982C6D2F4B000DA4AB /* DetailView.swift */,
 				0D8347422C6BD7760001ACD4 /* WorldView.swift */,
@@ -160,6 +166,8 @@
 				0D179F3A2C69292200E0CDFC /* ContentView.swift in Sources */,
 				0DE32C992C6D2F4B000DA4AB /* DetailView.swift in Sources */,
 				0D74E9A12C6A7DC1008D1570 /* Location.swift in Sources */,
+				0D9412B22C6D39AC00D72F5D /* Tip.swift in Sources */,
+				0D9412B42C6D3B1000D72F5D /* TipsView.swift in Sources */,
 				0D8347432C6BD7760001ACD4 /* WorldView.swift in Sources */,
 				0D74E9A32C6A8273008D1570 /* Locations.swift in Sources */,
 				0D179F382C69292200E0CDFC /* TrekrApp.swift in Sources */,

@@ -8,52 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    let location: Location
+    //to create a new obj of locations (which will get data from json file)
+    @StateObject var locations = Locations()
     
     var body: some View {
         TabView {
-            NavigationStack {
-                ScrollView {
-                    Image(location.heroPicture)
-                        .resizable()
-                        .scaledToFit()
-                    
-                    Text(location.name)
-                        .font(.largeTitle)
-                        .bold()
-                        .multilineTextAlignment(.center)
-                    
-                    Text(location.country)
-                        .font(.title)
-                        .foregroundStyle(.secondary)
-                    
-                    Text(location.description)
-                        .padding(.horizontal)
-                    
-                    Text("Did you know?")
-                        .font(.title3)
-                        .bold()
-                        .padding(.top)
-                    
-                    Text(location.more)
-                        .padding(.horizontal)
+            DetailView(location: locations.primary)
+                .tabItem {
+                    Image(systemName: "airplane.circle.fill")
+                    Text("Discover")
                 }
-                .navigationTitle("Discover")
-            }
-            .tabItem {
-                Image(systemName: "airplane.circle.fill")
-                Text("Discover")
-            }
             
             WorldView()
                 .tabItem {
                     Image(systemName: "star.fill")
                     Text("Locations")
                 }
+            
         }
+        //adding environmentObject so that locations obj can be used anywhere within the tabview
+        .environmentObject(locations)
     }
 }
 
 #Preview {
-    ContentView(location: Location.example)
+    ContentView()
 }

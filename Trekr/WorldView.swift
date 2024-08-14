@@ -9,6 +9,9 @@ import MapKit
 import SwiftUI
 
 struct WorldView: View {
+    //to access environmentobj which was passed to the tabview 
+    @EnvironmentObject var locations: Locations
+    
     //starting region for map
     @State var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 51.507222,
@@ -17,9 +20,11 @@ struct WorldView: View {
     )
     
     var body: some View {
-        //map vw, centered on abv region location 
-        Map(coordinateRegion: $region)
-            .navigationTitle("Locations")
+        NavigationStack {
+            //map vw, centered on abv region location
+            Map(coordinateRegion: $region)
+                .navigationTitle("Locations")
+        }
     }
 }
 
